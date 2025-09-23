@@ -1,0 +1,22 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+
+  content: [
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './app.vue',
+    './error.vue'
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        custom: ['Times New Roman', 'serif'],
+        arial: ['Arial', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}
