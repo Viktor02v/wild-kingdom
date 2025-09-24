@@ -12,14 +12,14 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Your Landing Page',
-      titleTemplate: '%s - Your Brand',
+      title: 'Wild Kingdom',
+      titleTemplate: '%s - Wild Kingdom',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
-          name: 'description', 
-          content: 'Your compelling landing page description for SEO' 
+          name: 'description',
+          content: 'Explore the wonders of the wild with Wild Kingdom'
         },
         { name: 'theme-color', content: '#000000' }
       ],
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   ],
 
   css: [
-    '~/assets/css/tailwind.css',
+    '~/assets/scss/main.scss',
   ],
 
   image: {
