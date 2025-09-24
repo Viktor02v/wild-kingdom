@@ -1,0 +1,19 @@
+.block-header {
+  @apply mb-8;
+  
+  &__label {
+    @apply text-sm text-gray-500;
+  }
+  
+  &__title {
+    @apply text-2xl font-bold mb-4;
+  }
+  
+  &__text {
+    @apply text-base text-gray-700;
+  }
+  
+  &__button {
+    @apply bg-primary text-white px-4 py-2 rounded;
+  }
+}
