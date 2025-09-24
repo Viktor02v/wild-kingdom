@@ -70,20 +70,6 @@ export default defineNuxtConfig({
     }
   },
 
-  vite: {
-    build: {
-      cssCodeSplit: true,
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            vue: ['vue', 'vue-router'],
-            nuxt: ['nuxt', '#app']
-          }
-        }
-      }
-    }
-  },
-
   features: {
     inlineStyles: false
   }
