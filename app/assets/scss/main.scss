@@ -1,4 +1,6 @@
 @use 'components/block';
+@use 'base/button.scss';
+@use 'base/mixins';
 
 @tailwind base;
 @tailwind components;

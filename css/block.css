@@ -2,7 +2,7 @@
   @apply mb-8;
 }
 .block-header__label {
-  @apply text-sm text-gray-500;
+  @apply leading-[156.25%]; /* 25/16 */
 }
 .block-header__title {
   @apply text-2xl font-bold mb-4;
