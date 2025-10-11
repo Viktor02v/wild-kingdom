@@ -15,7 +15,12 @@ export default {
       'mobileSmall': '480px',    
       'mobile': '768px',        
       'tablet': '992px',        
-      'pc': '1602px',           
+      'pc': '1602px',      
+      
+      'max-mobileSmall': {'max': '479px'},
+      'max-mobile': {'max': '767px'},
+      'max-tablet': {'max': '991px'},
+      'max-pc': {'max': '1601px'},
     },
 
       colors: {
