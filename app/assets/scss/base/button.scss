@@ -1,12 +1,19 @@
 .button {
   @apply inline-flex p-0 relative font-light leading-[156.25%] py-[10px] px-[40px] rounded-[50px] overflow-hidden bg-white;
 
+  &::before{
+    @apply content-[''] absolute top-0 left-0 w-[100%] h-[100%] bg-[url('/bg-button.jpg')] bg-no-repeat bg-center opacity-50 transition-opacity duration-300;
+  }
+
   &--fv {
     @apply w-[100%];
   }
 
-  &::before{
-    @apply content-[''] absolute top-0 left-0 w-[100%] h-[100%] bg-[url('/bg-button.jpg')] bg-no-repeat bg-center opacity-50 transition-opacity duration-300;
+  &--border {
+    @apply bg-transparent border border-lightGold text-lightGold transition-all duration-300;
+    &::before {
+      @apply opacity-0;
+    }
   }
 
   span {
@@ -15,10 +22,10 @@
 
   @media (any-hover: hover) {
     &:hover {
+      @apply text-primary border border-transparent;
       &::before {
-        @apply opacity-100;
+        @apply opacity-100 ;
       }
     }
   }
-
 } 

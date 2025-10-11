@@ -1,18 +1,26 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { defineProps } from 'vue'
+defineProps<{
+  label: string
+  title: string
+  quote: string
+  text: string
+  buttonText: string
+}>()
+</script>
 
 <template>
   <div class="block-header">
-    <div class="block-header__label">About us</div>
-    <h1 class="block-header__title">Treating pet like Royalty</h1>
+    <div class="block-header__label">{{ label }}</div>
+    <h1 class="block-header__title">{{ title }}</h1>
     <div class="block-header__text">
-      <blockquote>“They’re not just pets, they’re family”</blockquote>
+      <blockquote>{{ quote }}</blockquote>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi
-        id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.
+        {{ text }}
       </p>
     </div>
-    <a href="#" class="block-header__button button"><span>Contact</span></a>
+    <a href="#" class="block-header__button button">
+      <span>{{ buttonText }}</span>
+    </a>
   </div>
 </template>
-
-<style scoped></style>
