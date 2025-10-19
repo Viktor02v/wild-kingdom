@@ -60,17 +60,6 @@ export default defineNuxtConfig({
     }
   },
 
-  icon: {
-    size: '24px', 
-    class: 'icon', 
-    aliases: {
-
-      'home': 'ph:house-duotone',
-      'menu': 'ph:list-duotone',
-      'close': 'ph:x-duotone'
-    }
-  },
-
   features: {
     inlineStyles: false
   }

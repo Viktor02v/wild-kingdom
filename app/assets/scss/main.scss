@@ -1,7 +1,9 @@
 @use 'components/block';
-@use 'header.scss';
-@use 'base/button.scss';
+@use 'components/header';
+@use 'components/footer';
+@use 'base/button';
 @use 'base/mixins';
+@use 'base/input';
 
 @tailwind base;
 @tailwind components;
