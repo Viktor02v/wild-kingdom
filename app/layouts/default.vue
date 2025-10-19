@@ -1,10 +1,20 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="">
+  <section class="page">
     <TopBar />
-    <main class="">
-      <slot />
+    <main>
+      <slot class="" />
     </main>
+    <AppFooter />
   </section>
 </template>
+
+<style lang="scss" scoped>
+.page {
+  @apply flex flex-col min-h-screen;
+  main {
+    @apply flex-grow;
+  }
+}
+</style>

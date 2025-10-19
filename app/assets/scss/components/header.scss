@@ -75,7 +75,7 @@
   }
 
   &__link {
-    @apply text-lightGold leading-[152%] font-light inline-block;
+    @apply text-lightGold leading-[152%] font-light inline-block transition-all duration-300;
 
     &:hover {
       @apply text-gold underline underline-offset-1;
@@ -95,7 +95,7 @@
   }
 
   &__link {
-    @apply text-lightGold leading-[152%] font-light inline-block;
+    @apply text-lightGold leading-[152%] font-light inline-block transition-all duration-300;
 
     &:hover {
       @apply text-gold underline underline-offset-1;
