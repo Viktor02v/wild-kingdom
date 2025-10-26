@@ -2,7 +2,7 @@
   @apply w-full flex justify-center fixed top-0 left-0 z-[100];
 
   &__container {
-    @apply w-container max-w-maxWidthContainer p-container grid grid-cols-[1fr_auto_1fr] min-h-[max(0px,clamp(4.375rem,9vw,9.5rem))] items-center py-[0.625rem] gap-x-[20px];
+    @apply container p-container grid grid-cols-[1fr_auto_1fr] min-h-[max(0px,clamp(4.375rem,9vw,9.5rem))] items-center py-[0.625rem] gap-x-[20px];
     @screen max-mobile {
       @apply grid-cols-[auto_1fr_auto_auto] gap-[0px];
     }

@@ -59,5 +59,17 @@ export default {
       },
     },
   },
-  plugins: [],
+
+  plugins: [
+    function ({ addComponents, theme }) {
+      addComponents({
+        // Custom container class
+        '.container': {
+          maxWidth: theme('maxWidth.maxWidthContainer'),
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        },
+      })
+    },
+  ],
 }

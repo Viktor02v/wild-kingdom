@@ -28,7 +28,7 @@
 		// .footer__container
 
 		&__container {
-      @apply relative max-w-maxWidthContainer mx-auto z-50;
+      @apply relative container z-50;
 
       @screen max-pc {
         @apply px-container;
