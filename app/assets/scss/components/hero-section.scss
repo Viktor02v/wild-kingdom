@@ -1,0 +1,70 @@
+.hero {
+  @apply relative min-h-[100vh] flex items-center;
+
+		&__container {
+      @apply relative z-20 container px-container flex-grow pt-[150px] pb-[50px];
+		}
+
+		&__content {
+      @apply max-w-[650px];
+		}
+
+		&__title {
+      @apply font-italiana text-lightGold font-normal capitalize leading-[100%];
+      font-size: clamp(42px, 8vw, 100px);
+      &:not(:last-child) {
+        margin-bottom: clamp(15px, 4vw, 35px);
+      }
+		}
+
+		&__button {
+		}
+
+		&__slider {
+		}
+
+		&__wrapper {
+		}
+
+		&__slide {
+		}
+
+		&__controll {
+		}
+
+		&__arrow {
+
+      &--left {
+      }
+
+      &--right {
+      }
+    }
+
+		&__bg {
+      @apply absolute top-0 left-0 w-full h-full object-cover object-top;
+		}
+}
+
+.swiper {
+}
+
+.swiper-wrapper {
+}
+
+.slide-hero {
+
+		&__body {
+      @apply rounded-full w-[125px] aspect-square;
+      .swiper-slide-active & {
+        @apply w-[650px];
+      }
+		}
+
+		&__image {
+      @apply max-w-[100%];
+		}
+}
+
+.swiper-slide {
+}
